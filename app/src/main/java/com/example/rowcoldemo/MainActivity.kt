@@ -8,6 +8,7 @@ import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
@@ -52,8 +53,8 @@ fun TextCell(text: String, modifier: Modifier = Modifier) {
 
 @Composable
 fun MainScreen(modifier: Modifier = Modifier) {
-    Row(horizontalArrangement = Arrangement.End,
-        modifier = modifier.size(width = 400.dp, height = 200.dp)) {
+    Row(horizontalArrangement = Arrangement.SpaceAround,
+        modifier = modifier.width(width = 1000.dp)) {
         TextCell("1")
         TextCell("2")
         TextCell("3")
